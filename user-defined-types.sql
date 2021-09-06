@@ -7,7 +7,7 @@ CREATE TABLE countries (
     name VARCHAR
 );
 
-INSERT INTO TABLE countries (code, name) 
+INSERT INTO countries(code, name) 
     VALUES('USA', 'United States of America'),
           ('NZ', 'New Zealand'),
           ('SA', 'South Africa');
