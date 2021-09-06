@@ -1,4 +1,4 @@
-CREATE EXTENSION hstore;
+CREATE IF NOT EXISTS EXTENSION hstore;
 
 CREATE TABLE IF NOT EXISTS books (
 	id serial primary key,
