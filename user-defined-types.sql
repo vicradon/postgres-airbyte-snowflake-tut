@@ -1,10 +1,10 @@
 CREATE DOMAIN COUNTRY_CODE AS 
-   VARCHAR NOT NULL UNIQUE CHECK (value !~ '\s');
+   VARCHAR NOT NULL CHECK (value !~ '\s');
 
-CREATE TABLE countries (
+CREATE TABLE IF NOT EXISTS countries (
     id serial primary key,
     code COUNTRY_CODE,
-    name VARCHAR
+    name VARCHAR(255)
 );
 
 INSERT INTO countries(code, name) 
